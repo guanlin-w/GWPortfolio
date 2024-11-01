@@ -1,5 +1,5 @@
 :root {
-    background-color: red;
+    background-color: rgb(11, 41, 80);
 }
 
 ul {
@@ -29,15 +29,56 @@ ul {
     width: 100%;
   }
 
-  .nav-bar .nav-menu {
-    display: flex;
-    align-items: center;
-    background: blue;
-  }
+.nav-bar .nav-menu {
+  display: flex;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  border-radius: 0.5rem;
+}
 
-  .nav-bar .nav-link {
-    margin: 0 1rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-    font-family: "Roboto"; 
-  }
+.nav-bar .nav-link{
+  display: grid;
+  align-items:center;
+  position:relative;
+
+}
+
+.nav-bar .nav-link a{
+  color:white;
+  margin: .2rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: "Roboto"; 
+  border-radius: .5rem;
+  padding: .2rem .2rem;
+
+}
+
+.nav-bar .nav-link:hover a{
+  background-color: rgb(35,35,35);
+}
+
+
+
+.nav-bar .nav-hover {
+  visibility: hidden;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 3px 3px;
+  font-family: "Roboto";
+  z-index: 1;
+  font-size: 0.8rem;
+  position:absolute;
+  left:0;
+  right:0;
+  margin-inline:auto;
+  width: fit-content;
+  margin-top: 3.5rem;
+}
+
+.nav-bar .nav-link:hover .nav-hover{
+  visibility: visible;
+}
