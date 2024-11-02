@@ -1,5 +1,5 @@
 :root {
-    background-color: rgb(11, 41, 80);
+    background-color: rgb(80,80,80);
 }
 
 ul {
@@ -20,7 +20,7 @@ ul {
     z-index: 20;
 }
 
-.nav-bar .container {
+.nav-bar .nav-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,7 +32,6 @@ ul {
 .nav-bar .nav-menu {
   display: flex;
   align-items: center;
-  background: rgb(0, 0, 0);
   border-radius: 0.5rem;
 }
 
@@ -46,24 +45,22 @@ ul {
 .nav-bar .nav-link a{
   color:white;
   margin: .2rem 1rem;
-  font-size: 0.8rem;
-  font-weight: 600;
   text-decoration: none;
-  font-family: "Roboto"; 
   border-radius: .5rem;
-  padding: .2rem .2rem;
+  padding: .1rem .1rem;
 
 }
 
+
 .nav-bar .nav-link:hover a{
-  background-color: rgb(35,35,35);
+  background-color: rgb(40,40,40);
 }
 
 
 
 .nav-bar .nav-hover {
   visibility: hidden;
-  background-color: black;
+  background: black;
   color: white;
   text-align: center;
   border-radius: 6px;
@@ -79,6 +76,37 @@ ul {
   margin-top: 3.5rem;
 }
 
+
 .nav-bar .nav-link:hover .nav-hover{
   visibility: visible;
+}
+
+
+/* Introduction related */
+.intro-container {
+  display: flex;
+  z-index: 20;
+  top: 100px;
+  position:relative;
+  padding: 5rem 15rem;
+}
+
+.intro-greeting {
+  background: blue;
+}
+
+.intro-card {
+  background: rgb(140,140,140);
+  padding: 3rem 3rem;
+  border-radius: 3rem;
+  box-shadow: 3px 3px 5px 1px rgb(40,40,40);
+}
+
+.intro-card:hover {
+  box-shadow: 3px 3px 5px 1px rgb(20,20,20);
+}
+
+.intro-card img{
+  max-width: 20rem;
+  height:auto;
 }
